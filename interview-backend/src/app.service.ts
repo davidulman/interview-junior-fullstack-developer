@@ -34,6 +34,8 @@ export class AppService {
     return {
       cities: filteredCities.slice(start, end),
       page: currentPage + '/' + maxPages,
+      currentPage,
+      maxPages,
       totalResultsInThisPage,
       totalResults,
     };
