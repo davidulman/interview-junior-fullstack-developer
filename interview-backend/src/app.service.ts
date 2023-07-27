@@ -5,10 +5,10 @@ import { readFileSync } from 'fs';
 export class AppService {
   private cities = JSON.parse(readFileSync('../cities.json', 'utf8'));
 
-  getCity(cityName, currentPage) {
+  getCity(cityName: string, currentPage: number) {
     const maxResultsPerPage = 5;
     const city = cityName.toLowerCase();
-    const filteredCities = this.cities.filter((c) =>
+    const filteredCities = this.cities.filter((c: { cityName: string }) =>
       c.cityName.toLowerCase().includes(city),
     );
 
