@@ -1,0 +1,23 @@
+mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+}
+
+.appName {
+  color: lightgray;
+  font-weight: lighter;
+}
+
+.root {
+  // display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // height: 100%;
+}

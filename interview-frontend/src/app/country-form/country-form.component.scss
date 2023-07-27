@@ -1,0 +1,95 @@
+.main-div {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  min-height: 60vh; // Adjust this to your liking
+  color: #fff;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-height: 200px;
+  padding: 1rem;
+}
+
+.searchCard {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.cityForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+mat-spinner {
+  width: 50px;
+  height: 50px;
+}
+
+mat-card-title {
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1rem;
+}
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+mat-card-content h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.typeingImage {
+  width: 55%;
+}
+
+.enterDataCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.typingText {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #fff;
+  text-align: center;
+}
