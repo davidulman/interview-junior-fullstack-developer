@@ -77,8 +77,8 @@ export class CountryFormComponent {
 
     this.errDialog.open(ErrorModalComponent, {
       data: {
-        message: this.errorMsg.message,
-        statusCode: this.errorMsg.statusCode,
+        message: this.errorMsg.message || 'Something went wrong',
+        statusCode: this.errorMsg.statusCode || 500,
       },
     });
   }
